@@ -143,6 +143,7 @@ def product_delete(request, pk):
     product.delete()
     return redirect('crm:product_list')
 
+
 @login_required
 def summary(request, pk):
     customer = get_object_or_404(Customer, pk=pk)
