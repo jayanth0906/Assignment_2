@@ -1,6 +1,7 @@
 {% extends "crm/base.html" %}
 
 {% block content %}
+
     {% if form.errors %}
     <br />
     <p>Your username and password didn't match. Please try again.</p>
@@ -15,4 +16,5 @@
         <input type="submit" value="login"/>
         <input type="hidden" name="next" value="{{ next }}"/>
     </form>
+
 {% endblock %}
